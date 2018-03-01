@@ -1,0 +1,18 @@
+<h1>Create Your New Meetup Here!</h1>
+
+
+<form action="/meetups/new" method="post">
+  <label for="meetup_name">Name Your Meetup!</label>
+  <input type="text" id="meetup_name" name="meetup_name" >
+  <br>
+  <label for="location">Where:</label>
+  <input type="text" id="location" name="location" >
+  <br>
+  <label for="description">Describe it!</label>
+  <input type="text"  id="description" name="description" >
+  <br>
+  <input type="hidden"  id="creator_id" name="creator_id" value="<%=current_user.id %>">
+  <input type="hidden"  id="creator" name="creator" value="<%=current_user.username %>">
+
+  <input type="submit" id="Submit" value="Submit that 'ish!">
+</form>

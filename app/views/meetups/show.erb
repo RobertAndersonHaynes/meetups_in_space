@@ -1,0 +1,15 @@
+<h1><%= @meetup.first.name %></h1>
+
+  <ul class="meetup-tile">
+    <li>Name: <%= @meetup.first.name %></li>
+    <li>Location: <%= @meetup.first.location %></li>
+    <li>Description: <%= @meetup.first.description %></li>
+    <li>Creator: <%= @meetup.first.creator %></li>
+  </ul>
+
+<h3>Check out Who's Going</h3>
+
+  <ol class='attendees'>
+
+    <li><%=@attendees%></li>
+  </ol>
